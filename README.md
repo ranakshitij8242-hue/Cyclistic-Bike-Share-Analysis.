@@ -1,20 +1,69 @@
-Project: Cyclistic Bike-Share Behavioral Analysis
-Executive Summary: Developed a comprehensive data analysis case study for Cyclistic, a prominent bike-share program, as part of the Google Data Analytics Professional Certificate. The project follows the data analysis process: Ask, Prepare, Process, Analyze, Share, and Act.
+🎯 Business Goal
+To convert Casual riders into Annual members by identifying key differences in how they use the service.
 
-Business Objective: Conducted an end-to-end analysis to identify how annual members and casual riders utilize the service differently. The goal was to provide data-driven insights to support a marketing strategy aimed at converting casual riders into long-term members.
+🛠️ Tech Stack
+Cleaning: R (Tidyverse, Lubridate)
 
-Data Preparation: Imported and structured historical bike-trip data using the readxl package. Ensured data integrity by verifying data types and handling large datasets effectively during the ingestion phase.
+Analysis: SQL / R
 
-Data Cleaning & Transformation: Utilized R and the tidyverse ecosystem to clean raw data, address missing values, and remove inconsistencies, ensuring high-quality inputs for the analysis phase.
+Visualization: Tableau
 
-Feature Engineering: Leveraged the lubridate package to perform time-series calculations. Created new variables, including ride_length (trip duration) and day_of_week, to uncover specific temporal usage patterns across different user segments.
+🔍 Key Research Findings
+Usage Patterns: Members use bikes for weekday commutes (peaks at 8 AM / 5 PM). Casuals peak on weekends for leisure.
 
-Statistical Analysis: Performed descriptive statistics and group-wise summaries to compare the average trip duration and total ride frequency between members and casual riders.
+Duration: Casual riders travel 2x longer on average than members.
 
-Data Visualization: Engineered sophisticated visualizations using ggplot2, including boxplots and bar charts, to clearly communicate that casual riders maintain significantly longer ride durations while members ride more frequently for commuting.
+Seasonality: Activity spikes for both groups in Summer, but Casual riders drop off significantly in Winter.
 
-Reproducible Reporting: Authored the final technical report using R Markdown, integrating code chunks, statistical outputs, and narrative findings into a professional, shareable HTML format.
+🧹 Data Cleaning (Research Integrity)
+Removed trips under 60 seconds (false starts).
 
-Actionable Recommendations: Proposed targeted marketing strategies, including weekend-only membership tiers and seasonal promotional campaigns, to capitalize on the identified leisure-usage trends of casual riders.
+Excluded "HQ QR" and maintenance test data.
 
-Technical Proficiency: Demonstrated the ability to solve complex business problems by translating raw data into actionable business intelligence using industry-standard analytical tools.
+Handled missing station names to ensure geographic accuracy.
+
+💡 Top 3 Recommendations
+Weekend Membership: Launch a "Weekend-Only" pass to capture high-volume casual traffic.
+Gemini said
+For a Data Researcher role, your README should be a "scannable" Executive Summary. Recruiters will spend about 30 seconds on it.
+
+Copy and paste this into your README.md:
+
+🚲 Cyclistic Bike-Share Analysis
+Google Data Analytics Capstone Project
+
+🎯 Business Goal
+To convert Casual riders into Annual members by identifying key differences in how they use the service.
+
+🛠️ Tech Stack
+Cleaning: R (Tidyverse, Lubridate)
+
+Analysis: SQL / R
+
+Visualization: Tableau
+
+🔍 Key Research Findings
+Usage Patterns: Members use bikes for weekday commutes (peaks at 8 AM / 5 PM). Casuals peak on weekends for leisure.
+
+Duration: Casual riders travel 2x longer on average than members.
+
+Seasonality: Activity spikes for both groups in Summer, but Casual riders drop off significantly in Winter.
+
+🧹 Data Cleaning (Research Integrity)
+Removed trips under 60 seconds (false starts).
+
+Excluded "HQ QR" and maintenance test data.
+
+Handled missing station names to ensure geographic accuracy.
+
+💡 Top 3 Recommendations
+Weekend Membership: Launch a "Weekend-Only" pass to capture high-volume casual traffic.
+
+Summer Campaign: Target ads at tourist-heavy stations during peak months (June–August).
+
+Long-Ride Rewards: Offer member-exclusive discounts for trips exceeding 30 minutes.
+
+👉 [View My Tableau Dashboard](https://public.tableau.com/app/profile/kshitij.kumar4547/vizzes)
+Summer Campaign: Target ads at tourist-heavy stations during peak months (June–August).
+
+Long-Ride Rewards: Offer member-exclusive discounts for trips exceeding 30 minutes.
